@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <ArxSDK>D:\Work\ObjectARX2021</ArxSDK>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetExt>.arx</TargetExt>
+    <IncludePath>$(ArxSDK)\inc;$(ArxSDK)\inc-x64;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ArxSDK)\lib-x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="ArxSDK">
+      <Value>$(ArxSDK)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
